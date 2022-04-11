@@ -45,7 +45,7 @@ public class StudentdaoImpl implements Studentdao {
 
 	@Override
 	public void BeginTransaction() {
-		entityManager.getTransaction().commit();
+		entityManager.getTransaction().begin();
 		
 	}
 	
